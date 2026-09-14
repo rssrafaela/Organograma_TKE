@@ -1485,3 +1485,1038 @@ body {
         }
     }
 }
+/* =====================================================
+   AJUSTE FINAL — HIERARQUIA GEM + RESPONSIVIDADE GLOBAL
+   ===================================================== */
+
+/* A página nunca deve cortar conteúdo em telas menores. */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 0;
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+}
+
+.main {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: visible;
+}
+
+.page,
+.page.active {
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+}
+
+/* Mantém o organograma moderno, mas permite que os cards se reorganizem. */
+.departments,
+.zones-grid {
+    width: 100%;
+    min-width: 0;
+}
+
+.department,
+.zone-card,
+.staff-card {
+    min-width: 0;
+}
+
+.department-content,
+.staff-card,
+.zone-body,
+.technical-list > div {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Hierarquia correta: Engenheiro GEM -> Gustavo Meyer */
+.gem-hierarchy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.gem-manager,
+.gem-intern {
+    width: 100%;
+}
+
+.gem-manager {
+    border-left-color: var(--tke-purple);
+}
+
+.gem-intern {
+    margin-left: 9%;
+    width: 91%;
+}
+
+.gem-connector {
+    width: 1px;
+    height: 10px;
+    margin-left: 18px;
+    background: var(--gray-300);
+}
+
+/* Desktop grande */
+@media (min-width: 1501px) {
+    .main {
+        padding-left: clamp(28px, 3vw, 58px);
+        padding-right: clamp(28px, 3vw, 58px);
+    }
+
+    .departments,
+    .zones-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Notebook / desktop comum */
+@media (min-width: 1101px) and (max-width: 1500px) {
+    .header {
+        height: auto;
+        min-height: 82px;
+        grid-template-columns: minmax(110px, 150px) 1fr minmax(210px, 260px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main {
+        padding: 18px 24px 24px;
+    }
+
+    .section-heading {
+        margin-bottom: 12px;
+    }
+
+    .departments,
+    .zones-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .department-header {
+        padding: 8px 11px;
+    }
+
+    .department-content {
+        padding: 10px;
+    }
+
+    .staff-card {
+        padding: 7px;
+    }
+
+    .zone-tags span {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+/* Tablet horizontal / notebook estreito */
+@media (min-width: 701px) and (max-width: 1100px) {
+    .header {
+        height: auto;
+        min-height: 78px;
+        grid-template-columns: 110px 1fr auto;
+        gap: 14px;
+        padding: 10px 20px;
+    }
+
+    .header-logo img {
+        width: 82px;
+    }
+
+    .header-center h1 {
+        font-size: clamp(20px, 2.4vw, 27px);
+    }
+
+    .header-actions {
+        min-width: 170px;
+    }
+
+    .main {
+        padding: 18px 20px 28px;
+    }
+
+    .section-heading {
+        gap: 20px;
+    }
+
+    .section-heading p {
+        width: min(320px, 42vw);
+    }
+
+    .departments,
+    .zones-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .departments::before {
+        display: none;
+    }
+
+    .department-header h3 {
+        font-size: 14px;
+    }
+
+    .staff-card strong,
+    .zone-body strong {
+        font-size: 11px;
+    }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+    .app,
+    .main,
+    .page,
+    .page.active {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .departments,
+    .zones-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .gem-intern {
+        margin-left: 7%;
+        width: 93%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+/* Celular muito estreito */
+@media (max-width: 430px) {
+    .header-center h1 {
+        font-size: clamp(16px, 5.2vw, 18px);
+    }
+
+    .slide-btn {
+        min-width: 0;
+    }
+
+    .zone-tags span {
+        max-width: 100%;
+    }
+
+    .gem-intern {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .gem-connector {
+        margin-left: 14px;
+    }
+}
+
+/* =====================================================
+   AJUSTE FINAL — RESPONSABILIDADE OPERACIONAL / RESPONSIVO
+===================================================== */
+
+/* Carlos Ramalho - responsabilidade operacional direta */
+.operational-responsibility {
+    width: min(460px, 92vw);
+    padding: 9px 12px 11px;
+    border: 1px solid var(--gray-200);
+    border-radius: 9px;
+    background: var(--gray-50);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035);
+}
+
+.operational-label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--gray-500);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+}
+
+.operational-zones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.operational-zones span {
+    min-height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: var(--tke-purple);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Evita corte de conteúdo em notebooks/telas com pouca altura */
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+}
+
+.main {
+    min-height: 0;
+    overflow: visible;
+}
+
+.page,
+.page.active {
+    height: auto;
+}
+
+/* Desktop grande: mantém o visual original em 4 colunas */
+@media (min-width: 1401px) {
+    .departments {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .zones-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Notebook / desktop menor */
+@media (max-width: 1400px) and (min-width: 901px) {
+    .header {
+        grid-template-columns: 130px minmax(0, 1fr) 220px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-logo img {
+        width: 88px;
+    }
+
+    .main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .departments {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .departments::before {
+        display: none;
+    }
+
+    .zones-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .department,
+    .zone-card {
+        min-width: 0;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) and (min-width: 701px) {
+    .header {
+        height: auto;
+        min-height: 82px;
+        grid-template-columns: 105px minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .header-logo img {
+        width: 78px;
+    }
+
+    .header-center h1 {
+        font-size: 22px;
+    }
+
+    .header-center p {
+        font-size: 11px;
+    }
+
+    .main {
+        padding: 18px 20px 24px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .section-heading p {
+        width: 280px;
+    }
+
+    .departments,
+    .zones-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .departments::before {
+        display: none;
+    }
+
+    .person-card {
+        width: 210px;
+    }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+    .operational-responsibility {
+        width: min(100%, 360px);
+        padding: 10px;
+    }
+
+    .operational-label {
+        font-size: 8px;
+    }
+
+    .operational-zones span {
+        flex: 1 1 calc(50% - 6px);
+        min-width: 110px;
+        min-height: 30px;
+        font-size: 10px;
+    }
+}
+
+/* Celulares muito estreitos */
+@media (max-width: 430px) {
+    .operational-zones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .operational-zones span {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+/* =====================================================
+   V4 — ZONAS DO CARLOS AO LADO DO COORDENADOR
+   Mantém as zonas como responsabilidade própria do Carlos,
+   sem dar a impressão de que elas coordenam os gestores abaixo.
+===================================================== */
+
+.coordinator-row {
+    width: min(760px, 94vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    position: relative;
+}
+
+.coordinator-row .coordenador {
+    flex: 0 0 220px;
+}
+
+.coordinator-row .operational-responsibility {
+    width: auto;
+    max-width: 430px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    box-shadow: none;
+}
+
+.coordinator-row .operational-label {
+    margin: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.coordinator-row .operational-zones {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.coordinator-row .operational-zones span {
+    min-height: 24px;
+    padding: 0 8px;
+    font-size: 8px;
+}
+
+/* A linha para os departamentos nasce do coordenador, não do bloco das zonas */
+.management-line.final {
+    margin-left: 0;
+}
+
+@media (max-width: 900px) {
+    .coordinator-row {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .coordinator-row .operational-responsibility {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .coordinator-row {
+        flex-direction: column;
+    }
+
+    .coordinator-row .coordenador {
+        flex: 0 0 auto;
+    }
+
+    .coordinator-row .operational-responsibility {
+        width: min(100%, 360px);
+        display: block;
+        text-align: center;
+        padding: 9px 10px 10px;
+    }
+
+    .coordinator-row .operational-label {
+        display: block;
+        margin-bottom: 7px;
+        white-space: normal;
+    }
+
+    .coordinator-row .operational-zones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* =====================================================
+   V5 — CARLOS PERMANECE CENTRALIZADO
+   As zonas são apenas uma informação lateral e NÃO
+   participam do fluxo que define o centro do organograma.
+===================================================== */
+
+.coordinator-row {
+    width: 220px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.coordinator-row .coordenador {
+    width: 220px;
+    max-width: 100%;
+    margin: 0 auto;
+    flex: none;
+}
+
+.coordinator-row .operational-responsibility {
+    position: absolute;
+    left: calc(100% + 18px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: max-content;
+    max-width: none;
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 7px 9px;
+    margin: 0;
+
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    background: var(--gray-50);
+    box-shadow: none;
+    text-align: left;
+}
+
+.coordinator-row .operational-label {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 7px;
+}
+
+.coordinator-row .operational-zones {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.coordinator-row .operational-zones span {
+    min-height: 23px;
+    padding: 0 7px;
+    font-size: 8px;
+}
+
+/* Mantém a linha vertical exatamente no eixo central do Carlos */
+.management-line.final {
+    margin-left: 0 !important;
+}
+
+/* Em notebooks menores, reduzimos o bloco lateral sem mover o Carlos */
+@media (max-width: 1250px) and (min-width: 901px) {
+    .coordinator-row .operational-responsibility {
+        left: calc(100% + 12px);
+        gap: 6px;
+        padding: 6px 7px;
+    }
+
+    .coordinator-row .operational-label {
+        font-size: 6.5px;
+    }
+
+    .coordinator-row .operational-zones {
+        gap: 4px;
+    }
+
+    .coordinator-row .operational-zones span {
+        padding: 0 6px;
+        font-size: 7px;
+    }
+}
+
+/* Tablet: o Carlos continua centralizado e as zonas vão para baixo */
+@media (max-width: 900px) {
+    .coordinator-row {
+        width: 220px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .coordinator-row .operational-responsibility {
+        position: static;
+        transform: none;
+
+        width: min(420px, calc(100vw - 40px));
+        max-width: none;
+
+        margin-top: 10px;
+        margin-left: 50%;
+        translate: -50% 0;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .coordinator-row .operational-zones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Celular: informação compacta abaixo, eixo continua central */
+@media (max-width: 700px) {
+    .coordinator-row {
+        width: min(220px, 80vw);
+    }
+
+    .coordinator-row .coordenador {
+        width: 100%;
+    }
+
+    .coordinator-row .operational-responsibility {
+        width: min(340px, calc(100vw - 28px));
+        display: block;
+        padding: 9px 10px 10px;
+    }
+
+    .coordinator-row .operational-label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 8px;
+        white-space: normal;
+    }
+
+    .coordinator-row .operational-zones {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .coordinator-row .operational-zones span {
+        width: 100%;
+        min-width: 0;
+        min-height: 28px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 430px) {
+    .coordinator-row .operational-responsibility {
+        width: min(310px, calc(100vw - 24px));
+    }
+}
+
+
+/* =====================================================
+   AJUSTES FINAIS - CONTATOS, GEM, RESGATE E RESPONSIVIDADE
+===================================================== */
+
+/* Permite que páginas maiores rolem sem cortar conteúdo */
+.app {
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+}
+
+.main {
+    min-height: calc(100vh - 115px);
+    overflow: visible;
+}
+
+.page,
+.page.active {
+    height: auto;
+    min-height: 0;
+}
+
+/* GEM centralizado */
+.gem-title {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gem-hierarchy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gem-manager,
+.gem-intern {
+    width: 85%;
+    text-align: center;
+    align-items: center;
+}
+
+.gem-connector {
+    width: 1px;
+    height: 14px;
+    background: var(--gray-300);
+    flex-shrink: 0;
+}
+
+/* Cards de zonas com contatos */
+.zone-card {
+    overflow: hidden;
+}
+
+.zone-body {
+    align-items: stretch;
+}
+
+.zone-person {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.zone-person strong {
+    margin-bottom: 5px;
+}
+
+.person-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 3px;
+    min-width: 0;
+}
+
+.person-phone,
+.person-email {
+    display: block;
+    max-width: 100%;
+    color: var(--gray-700);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.person-phone {
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.person-email {
+    font-size: 6.5px;
+    line-height: 1.25;
+}
+
+.person-phone:hover,
+.person-email:hover {
+    color: var(--tke-purple);
+    text-decoration: underline;
+}
+
+/* Consultores técnicos da Zona 09 */
+.technical-list .person-contact {
+    margin-top: 5px;
+}
+
+.technical-list .person-phone {
+    font-size: 6.5px;
+}
+
+.technical-list .person-email {
+    font-size: 6px;
+}
+
+/* Resgate / Captação */
+.rescue-section {
+    width: 100%;
+    margin-top: 22px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.rescue-heading {
+    margin-bottom: 12px;
+}
+
+.rescue-heading > span {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--tke-orange);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.rescue-heading h3 {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.rescue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.rescue-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    background: white;
+}
+
+.rescue-card-header {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 9px 13px;
+    background: var(--tke-orange);
+    color: white;
+}
+
+.rescue-card-header span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.rescue-card-header strong {
+    display: block;
+    font-size: 13px;
+}
+
+.rescue-card-body {
+    padding: 12px 13px;
+}
+
+.rescue-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 16px;
+    margin-bottom: 10px;
+}
+
+.rescue-contact a {
+    color: var(--gray-700);
+    font-size: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.rescue-contact a:hover {
+    color: var(--tke-purple);
+    text-decoration: underline;
+}
+
+.rescue-zones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.rescue-zones span {
+    min-height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9px;
+    border-radius: 4px;
+    background: var(--gray-100);
+    color: var(--gray-700);
+    font-size: 8px;
+    font-weight: 700;
+}
+
+/* Notebook: preserva 4 colunas, mas permite conteúdo maior */
+@media (max-width: 1450px) {
+    .zones-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .person-email {
+        font-size: 6px;
+    }
+}
+
+/* Tablet / notebook estreito */
+@media (max-width: 1050px) {
+    .zones-grid,
+    .departments {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .departments::before {
+        display: none;
+    }
+
+    .person-phone {
+        font-size: 8px;
+    }
+
+    .person-email {
+        font-size: 7px;
+    }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+    .zones-grid,
+    .departments,
+    .rescue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .zone-body {
+        grid-template-columns: 1fr;
+    }
+
+    .zone-body > div + div {
+        border-left: none;
+        border-top: 1px solid var(--gray-200);
+    }
+
+    .zone-body > div:first-child,
+    .zone-body > div:last-child {
+        border-bottom: none;
+    }
+
+    .zone-body > div:first-child {
+        border-left: 3px solid var(--tke-purple);
+    }
+
+    .zone-body > div:last-child {
+        border-left: 3px solid var(--tke-orange);
+    }
+
+    .person-phone {
+        font-size: 10px;
+    }
+
+    .person-email {
+        font-size: 9px;
+    }
+
+    .technical-list {
+        grid-template-columns: 1fr;
+    }
+
+    .technical-list .person-phone {
+        font-size: 9px;
+    }
+
+    .technical-list .person-email {
+        font-size: 8px;
+    }
+
+    .rescue-card-header strong {
+        font-size: 14px;
+    }
+
+    .rescue-contact {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .rescue-contact a {
+        font-size: 9px;
+    }
+
+    .gem-manager,
+    .gem-intern {
+        width: 100%;
+    }
+}
