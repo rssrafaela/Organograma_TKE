@@ -1,0 +1,997 @@
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
+:root {
+
+    --tke-purple: #6200c9;
+    --tke-orange: #f36c21;
+
+    --dark: #2d2d2d;
+    --text: #2f2f2f;
+
+    --gray-700: #6e6e6e;
+    --gray-500: #8d8d8d;
+
+    --gray-300: #d7d7d7;
+    --gray-200: #e7e7e7;
+    --gray-100: #f3f3f4;
+    --gray-50: #f8f8f9;
+
+    --white: #ffffff;
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #e9e9ea;
+
+    color: var(--text);
+
+}
+
+
+/* =========================================
+   APP
+========================================= */
+
+.app {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    position: relative;
+
+    height: 11vh;
+    min-height: 85px;
+
+    display: grid;
+
+    grid-template-columns:
+        180px
+        1fr
+        280px;
+
+    align-items: center;
+
+    padding: 0 3vw;
+
+    border-top:
+        5px solid var(--tke-orange);
+
+    border-bottom:
+        1px solid var(--gray-200);
+
+}
+
+
+.header-logo img {
+
+    width: 105px;
+
+    display: block;
+
+}
+
+
+.header-center {
+
+    text-align: center;
+
+}
+
+
+.header-center h1 {
+
+    font-size: 1.65vw;
+
+    font-weight: 650;
+
+    color: var(--dark);
+
+}
+
+
+.header-center p {
+
+    margin-top: 5px;
+
+    font-size: .8vw;
+
+    color: var(--gray-500);
+
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.header-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+}
+
+
+.slide-btn {
+
+    height: 34px;
+
+    padding: 0 15px;
+
+    border: 1px solid var(--gray-300);
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: var(--gray-700);
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: .2s;
+
+}
+
+
+.slide-btn:hover {
+
+    border-color:
+        var(--tke-purple);
+
+    color:
+        var(--tke-purple);
+
+}
+
+
+.slide-btn.active {
+
+    background:
+        var(--tke-purple);
+
+    color: white;
+
+    border-color:
+        var(--tke-purple);
+
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main {
+
+    flex: 1;
+
+    min-height: 0;
+
+    padding:
+        2vh
+        3vw
+        1vh;
+
+}
+
+
+.page {
+
+    display: none;
+
+    height: 100%;
+
+}
+
+
+.page.active {
+
+    display: block;
+
+}
+
+
+/* =========================================
+   TITULOS
+========================================= */
+
+.section-heading {
+
+    height: 8vh;
+
+    min-height: 60px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 1vh;
+
+}
+
+
+.section-heading.compact {
+
+    height: 6vh;
+
+}
+
+
+.eyebrow {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color:
+        var(--tke-orange);
+
+    font-size: .65vw;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 1.55vw;
+
+    font-weight: 650;
+
+    color: var(--dark);
+
+}
+
+
+.section-heading p {
+
+    width: 380px;
+
+    text-align: right;
+
+    font-size: .78vw;
+
+    line-height: 1.5;
+
+    color: var(--gray-500);
+
+}
+
+
+/* =========================================
+   GERÊNCIA
+========================================= */
+
+.management {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.person-card {
+
+    width: 220px;
+
+    min-height: 52px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.04);
+
+}
+
+
+.person-card span {
+
+    margin-bottom: 3px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .7px;
+
+    color: var(--gray-500);
+
+}
+
+
+.person-card strong {
+
+    font-size: 14px;
+
+    color: var(--dark);
+
+}
+
+
+.gerente {
+
+    border-top:
+        3px solid #666;
+
+}
+
+
+.coordenador {
+
+    border-top:
+        3px solid var(--tke-purple);
+
+}
+
+
+.management-line {
+
+    width: 1px;
+
+    height: 15px;
+
+    background:
+        var(--gray-300);
+
+}
+
+
+.management-line.final {
+
+    height: 20px;
+
+}
+
+
+/* =========================================
+   DEPARTMENTS
+========================================= */
+
+.departments {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1.2vw;
+
+}
+
+
+.departments::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 12.5%;
+    right: 12.5%;
+
+    top: -20px;
+
+    height: 1px;
+
+    background:
+        var(--gray-300);
+
+}
+
+
+.department {
+
+    overflow: hidden;
+
+    min-width: 0;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 9px;
+
+    background: white;
+
+}
+
+
+.department-header {
+
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    background:
+        var(--gray-50);
+
+    border-bottom:
+        1px solid var(--gray-200);
+
+}
+
+
+.department-header span {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+    color:
+        var(--gray-500);
+
+}
+
+
+.department-header h3 {
+
+    font-size: 13px;
+
+    color: var(--dark);
+
+}
+
+
+.department-content {
+
+    padding: 12px;
+
+}
+
+
+.block-title {
+
+    margin-bottom: 8px;
+
+    color:
+        var(--gray-500);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .6px;
+
+}
+
+
+/* =========================================
+   ZONAS DA PRIMEIRA TELA
+========================================= */
+
+.zone-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+}
+
+
+.zone-tags span {
+
+    min-height: 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 0 8px;
+
+    border-radius: 4px;
+
+    background:
+        var(--gray-100);
+
+    color:
+        var(--gray-700);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+}
+
+
+.divider {
+
+    height: 1px;
+
+    margin: 12px 0;
+
+    background:
+        var(--gray-200);
+
+}
+
+
+/* =========================================
+   STAFF
+========================================= */
+
+.staff-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 6px;
+
+}
+
+
+.staff-grid.single {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.staff-card {
+
+    min-height: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 6px 8px;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-left:
+        3px solid var(--tke-orange);
+
+    border-radius: 5px;
+
+    background: white;
+
+}
+
+
+.staff-card strong {
+
+    font-size: 10px;
+
+    color: var(--dark);
+
+}
+
+
+.staff-card span {
+
+    margin-top: 2px;
+
+    font-size: 7px;
+
+    color: var(--gray-500);
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================
+   GESTÃO POR ZONAS
+========================================= */
+
+.zones-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1vw;
+
+}
+
+
+.zone-card {
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 8px;
+
+    background: white;
+
+}
+
+
+.zone-card header {
+
+    min-height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    background:
+        var(--dark);
+
+    color: white;
+
+}
+
+
+.zone-card header > div {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 6px;
+
+}
+
+
+.zone-card header span {
+
+    font-size: 8px;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+
+    color: #d7d7d7;
+
+}
+
+
+.zone-card header strong {
+
+    font-size: 16px;
+
+}
+
+
+.badge {
+
+    padding: 5px 8px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.12);
+
+    font-size: 7px !important;
+
+    font-weight: 700;
+
+    color: white !important;
+
+}
+
+
+.zone-body {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+}
+
+
+.zone-body > div {
+
+    min-height: 64px;
+
+    padding: 10px 11px;
+
+}
+
+
+.zone-body > div + div {
+
+    border-left:
+        1px solid var(--gray-200);
+
+}
+
+
+.zone-body span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color:
+        var(--gray-500);
+
+}
+
+
+.zone-body strong {
+
+    display: block;
+
+    font-size: 10px;
+
+    line-height: 1.25;
+
+    color:
+        var(--dark);
+
+}
+
+
+.zone-body > div:first-child {
+
+    border-bottom:
+        3px solid var(--tke-purple);
+
+}
+
+
+.zone-body > div:last-child {
+
+    border-bottom:
+        3px solid var(--tke-orange);
+
+}
+
+
+.pending {
+
+    color:
+        var(--gray-500) !important;
+
+    font-style: italic;
+
+}
+
+
+/* =========================================
+   CONSULTORIA TÉCNICA ZONA 09
+========================================= */
+
+.technical-team {
+
+    padding: 8px 10px 9px;
+
+    background:
+        var(--gray-50);
+
+    border-top:
+        1px solid var(--gray-200);
+
+}
+
+
+.technical-title {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color:
+        var(--gray-500);
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .6px;
+
+}
+
+
+.technical-list {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 5px;
+
+}
+
+
+.technical-list > div {
+
+    padding: 6px 7px;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 4px;
+
+    background: white;
+
+}
+
+
+.technical-list strong {
+
+    display: block;
+
+    font-size: 8px;
+
+    line-height: 1.2;
+
+    color:
+        var(--dark);
+
+}
+
+
+.technical-list span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color:
+        var(--gray-500);
+
+    font-size: 6px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    height: 4vh;
+    min-height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 3vw;
+
+    border-top:
+        1px solid var(--gray-200);
+
+    background:
+        var(--gray-50);
+
+    color:
+        var(--gray-500);
+
+    font-size: 8px;
+
+}
+
+
+/* =========================================
+   TELAS MENORES
+========================================= */
+
+@media(max-width: 1200px) {
+
+    .header-center h1 {
+        font-size: 22px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .departments {
+        gap: 10px;
+    }
+
+    .zones-grid {
+        gap: 8px;
+    }
+
+}
