@@ -47,7 +47,6 @@
           <div class="section-heading">
             <div>
               <span class="eyebrow"> ORGANOGRAMA </span>
-
               <h2>Estrutura de Gestão</h2>
             </div>
 
@@ -55,7 +54,6 @@
           </div>
 
           <!-- GERENTE / COORDENADOR -->
-
           <div class="management">
             <div class="person-card gerente">
               <span>Gerente</span>
@@ -64,19 +62,32 @@
 
             <div class="management-line"></div>
 
-            <div class="person-card coordenador">
-              <span>Coordenador</span>
-              <strong>Carlos Ramalho</strong>
+            <div class="coordinator-row">
+              <div class="person-card coordenador">
+                <span>Coordenador</span>
+                <strong>Carlos Ramalho</strong>
+              </div>
+
+              <div class="operational-responsibility">
+                <span class="operational-label">Responsável Operacional</span>
+                <div
+                  class="operational-zones"
+                  aria-label="Zonas sob responsabilidade operacional de Carlos Ramalho"
+                >
+                  <span>Zona 09</span>
+                  <span>Zona 13</span>
+                  <span>Zona 18</span>
+                  <span>Zona 19</span>
+                </div>
+              </div>
             </div>
 
             <div class="management-line final"></div>
           </div>
 
           <!-- ÁREAS -->
-
           <div class="departments">
             <!-- COMERCIAL -->
-
             <article class="department">
               <header class="department-header">
                 <div>
@@ -116,25 +127,29 @@
                   </div>
 
                   <div class="staff-card">
-                    <strong>Pedro Pereira</strong>
+                    <strong>Antonio</strong>
+                    <span>ADM OP</span>
+                  </div>
+
+                  <div class="staff-card">
+                    <strong>Pedro</strong>
                     <span>Vendedor</span>
                   </div>
 
                   <div class="staff-card">
-                    <strong>Reinaldo Silva</strong>
+                    <strong>Reinaldo</strong>
                     <span>Vendedor</span>
                   </div>
                 </div>
               </div>
             </article>
 
-            <!-- OPERACIONAL 1 -->
-
+            <!-- OPERACIONAL - EDUARDO -->
             <article class="department">
               <header class="department-header">
                 <div>
                   <span>Gestor Operacional</span>
-                  <h3>Adrielle Afonso</h3>
+                  <h3>Eduardo</h3>
                 </div>
               </header>
 
@@ -143,10 +158,9 @@
 
                 <div class="zone-tags">
                   <span>01</span>
+                  <span>03</span>
                   <span>07</span>
-                  <span>09 / 13</span>
                   <span>11</span>
-                  <span>18 / 19</span>
                 </div>
 
                 <div class="divider"></div>
@@ -174,16 +188,32 @@
                     <span>ADM OP</span>
                   </div>
                 </div>
+
+                <div class="divider"></div>
+                <div class="block-title gem-title">Engenharia / GEM</div>
+
+                <div class="gem-hierarchy">
+                  <div class="staff-card gem-manager">
+                    <strong>Engenheiro Responsável GEM</strong>
+                    <span>Responsável pelo GEM</span>
+                  </div>
+
+                  <div class="gem-connector" aria-hidden="true"></div>
+
+                  <div class="staff-card gem-intern">
+                    <strong>Gustavo Meyer</strong>
+                    <span>Estagiário • GEM</span>
+                  </div>
+                </div>
               </div>
             </article>
 
-            <!-- OPERACIONAL 2 -->
-
+            <!-- OPERACIONAL - ADRIELLE -->
             <article class="department">
               <header class="department-header">
                 <div>
                   <span>Gestor Operacional</span>
-                  <h3>Eduardo Afonso</h3>
+                  <h3>Adrielle</h3>
                 </div>
               </header>
 
@@ -191,13 +221,10 @@
                 <div class="block-title">Zonas atendidas</div>
 
                 <div class="zone-tags">
-                  <span>03</span>
                   <span>04</span>
                   <span>05</span>
                   <span>06</span>
                   <span>10</span>
-                  <span>12</span>
-                  <span>20</span>
                 </div>
 
                 <div class="divider"></div>
@@ -209,16 +236,20 @@
                     <strong>Bruno</strong>
                     <span>ADM OP</span>
                   </div>
+
+                  <div class="staff-card">
+                    <strong>Antonio</strong>
+                    <span>ADM OP</span>
+                  </div>
                 </div>
               </div>
             </article>
 
             <!-- REPARO -->
-
             <article class="department">
               <header class="department-header">
                 <div>
-                  <span>Reparo</span>
+                  <span>Sup Adm Reparo</span>
                   <h3>Iury Moraes</h3>
                 </div>
               </header>
@@ -229,27 +260,37 @@
                 <div class="staff-grid single">
                   <div class="staff-card">
                     <strong>William Farias</strong>
-                    <span>Supervisor</span>
+                    <span>Sup OP Reparo</span>
                   </div>
 
                   <div class="staff-card">
                     <strong>Hosana Ferreira</strong>
-                    <span>Administrativo</span>
+                    <span>ADM</span>
                   </div>
 
                   <div class="staff-card">
                     <strong>Gustavo Narciso</strong>
-                    <span>Administrativo</span>
+                    <span>ADM</span>
                   </div>
 
                   <div class="staff-card">
                     <strong>Fernanda Silva</strong>
-                    <span>Administrativo</span>
+                    <span>ADM</span>
                   </div>
 
                   <div class="staff-card">
-                    <strong>Gustavo Meyer</strong>
-                    <span>Estagiário</span>
+                    <strong>Jean x Josinaldo</strong>
+                    <span>Reparo</span>
+                  </div>
+
+                  <div class="staff-card">
+                    <strong>Matheus x Sidnei</strong>
+                    <span>Reparo</span>
+                  </div>
+
+                  <div class="staff-card">
+                    <strong>Terceiros</strong>
+                    <span>Reparo</span>
                   </div>
                 </div>
               </div>
@@ -264,8 +305,7 @@
         <section id="zonas" class="page">
           <div class="section-heading compact">
             <div>
-              <span class="eyebrow"> GESTÃO TERRITORIAL </span>
-
+              <span class="eyebrow">GESTÃO TERRITORIAL</span>
               <h2>Responsáveis por Zona</h2>
             </div>
 
@@ -273,294 +313,565 @@
           </div>
 
           <div class="zones-grid">
-            <!-- ZONA 01 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>01</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>01</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Jonatas dos Santos Oliveira </strong>
+                  <strong>Jonatas dos Santos Oliveira</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995324482"
+                      >(21) 99532-4482</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:jonatas.oliveira@tkelevator.com"
+                      >jonatas.oliveira@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Thiago Ribeiro Fernandes </strong>
+                  <strong>Thiago Ribeiro Fernandes</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521996186138"
+                      >(21) 99618-6138</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:thiago.fernandes2@tkelevator.com"
+                      >thiago.fernandes2@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 03 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>03</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>03</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Paulo Cesar Pastor dos Santos </strong>
+                  <strong>Paulo Cesar Pastor dos Santos</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995019222"
+                      >(21) 99501-9222</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:paulo.pastor@tkelevator.com"
+                      >paulo.pastor@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Erickson de Carvalho Souto Maior </strong>
+                  <strong>Erickson de Carvalho Souto Maior</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521997976596"
+                      >(21) 99797-6596</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:erickson.maior@tkelevator.com"
+                      >erickson.maior@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 04 -->
-
             <article class="zone-card dedicated">
               <header>
                 <div>
                   <span>ZONA</span>
                   <strong>04</strong>
                 </div>
-
-                <span class="badge"> Cliente Especial </span>
+                <span class="badge">Cliente Especial</span>
               </header>
 
               <div class="zone-body">
-                <div>
-                  <span>Supervisor</span>
-                  <strong> Adrielle de Araujo Afonso </strong>
-                </div>
-
-                <div>
-                  <span>Consultor</span>
-                  <strong> Marcelo Rodrigues de Carvalho </strong>
-                </div>
-              </div>
-            </article>
-
-            <!-- ZONA 05 -->
-
-            <article class="zone-card">
-              <header>
-                <span>ZONA</span>
-                <strong>05</strong>
-              </header>
-
-              <div class="zone-body">
-                <div>
-                  <span>Supervisor</span>
-                  <strong> Leandro Rodrigues Ribeiro </strong>
-                </div>
-
-                <div>
-                  <span>Consultor</span>
-                  <strong> Pedro Ivo Valente do Carmo Gomes </strong>
-                </div>
-              </div>
-            </article>
-
-            <!-- ZONA 06 -->
-
-            <article class="zone-card">
-              <header>
-                <span>ZONA</span>
-                <strong>06</strong>
-              </header>
-
-              <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
                   <strong> Yago Gomes da Rocha </strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521999437739"
+                      >(21) 99943-7739</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:yago.rocha@tkelevator.com"
+                      >yago.rocha@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Renata Alves Narciso da Silva </strong>
+                  <strong> Yago Gomes da Rocha </strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521999437739"
+                      >(21) 99943-7739</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:yago.rocha@tkelevator.com"
+                      >yago.rocha@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 07 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>07</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>05</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Wagner Soares Moreira </strong>
+                  <strong>Leandro Rodrigues Ribeiro</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521996838713"
+                      >(21) 99683-8713</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:leandro.ribeiro@tkelevator.com"
+                      >leandro.ribeiro@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Dayanna da Silva Pinto </strong>
+                  <strong>Pedro Ivo Valente do Carmo Gomes</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521971240507"
+                      >(21) 97124-0507</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:pedro.gomes2@tkelevator.com"
+                      >pedro.gomes2@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
+            <article class="zone-card">
+              <header>
+                <div>
+                  <span>ZONA</span>
+                  <strong>06</strong>
+                </div>
+              </header>
 
-            <!-- ZONA 09 -->
+              <div class="zone-body">
+                <div class="zone-person">
+                  <span>Supervisor</span>
+                  <strong>Willian Portela Vieira</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521972299548"
+                      >(21) 97229-9548</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:william.vieira@tkelevator.com"
+                      >william.vieira@tkelevator.com</a
+                    >
+                  </div>
+                </div>
+                <div class="zone-person">
+                  <span>Consultor</span>
+                  <strong>Renata Alves Narciso da Silva</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521998848459"
+                      >(21) 99884-8459</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:renata.silva@tkelevator.com"
+                      >renata.silva@tkelevator.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="zone-card">
+              <header>
+                <div>
+                  <span>ZONA</span>
+                  <strong>07</strong>
+                </div>
+              </header>
 
+              <div class="zone-body">
+                <div class="zone-person">
+                  <span>Supervisor</span>
+                  <strong>Wagner Soares Moreira</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995066079"
+                      >(21) 99506-6079</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:wagner.moreira@tkelevator.com"
+                      >wagner.moreira@tkelevator.com</a
+                    >
+                  </div>
+                </div>
+                <div class="zone-person">
+                  <span>Consultor</span>
+                  <strong>Dayanna da Silva Pinto</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521996012774"
+                      >(21) 99601-2774</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:dayanna.pinto@tkelevator.com"
+                      >dayanna.pinto@tkelevator.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
             <article class="zone-card dedicated zone-9">
               <header>
                 <div>
                   <span>ZONA</span>
                   <strong>09</strong>
                 </div>
-
-                <span class="badge"> MetrôRio </span>
+                <span class="badge">MetrôRio</span>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-
-                  <strong> Douglas da Costa Oliveira </strong>
+                  <strong>Douglas da Costa Oliveira</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995721332"
+                      >(21) 99572-1332</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:douglas.oliveira@tkelevator.com"
+                      >douglas.oliveira@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-
-                  <strong> Luanda de Souza Santos </strong>
+                  <strong>Luanda de Souza Santos</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521999221285"
+                      >(21) 99922-1285</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:luanda.souza@tkelevator.com"
+                      >luanda.souza@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
 
               <div class="technical-team">
-                <span class="technical-title"> Consultores Técnicos </span>
+                <span class="technical-title">Consultores Técnicos</span>
 
                 <div class="technical-list">
                   <div>
-                    <strong> Andre Luis de Souza Vieira </strong>
-
-                    <span> Consultor Técnico </span>
+                    <strong>Andre Luis de Souza Vieira</strong>
+                    <span>Consultor Técnico</span>
+                    <div class="person-contact">
+                      <a class="person-phone" href="tel:+5521967035898"
+                        >(21) 96703-5898</a
+                      >
+                      <a
+                        class="person-email"
+                        href="mailto:andre-luis.vieira@tkelevator.com"
+                        >andre-luis.vieira@tkelevator.com</a
+                      >
+                    </div>
                   </div>
 
                   <div>
-                    <strong> Rodrigo de Carvalho Ojeda </strong>
-
-                    <span> Consultor Técnico </span>
+                    <strong>Rodrigo de Carvalho Ojeda</strong>
+                    <span>Consultor Técnico</span>
+                    <div class="person-contact">
+                      <a class="person-phone" href="tel:+5521998486396"
+                        >(21) 99848-6396</a
+                      >
+                      <a
+                        class="person-email"
+                        href="mailto:rodrigo.ojeda@tkelevator.com"
+                        >rodrigo.ojeda@tkelevator.com</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 13 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>13</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>13</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Douglas da Costa Oliveira </strong>
+                  <strong>Douglas da Costa Oliveira</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995721332"
+                      >(21) 99572-1332</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:douglas.oliveira@tkelevator.com"
+                      >douglas.oliveira@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Luanda de Souza Santos </strong>
+                  <strong>Luanda de Souza Santos</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521999221285"
+                      >(21) 99922-1285</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:luanda.souza@tkelevator.com"
+                      >luanda.souza@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 10 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>10</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>10</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Rodrigo Odilon dos Ramos </strong>
+                  <strong>Rodrigo Odilon dos Ramos</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521995047668"
+                      >(21) 99504-7668</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:rodrigo.ramos@tkelevator.com"
+                      >rodrigo.ramos@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Mariana da Silva dos Santos </strong>
+                  <strong>Mariana da Silva dos Santos</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521998669059"
+                      >(21) 99866-9059</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:mariana.santos@tkelevator.com"
+                      >mariana.santos@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 11 -->
-
             <article class="zone-card">
               <header>
-                <span>ZONA</span>
-                <strong>11</strong>
+                <div>
+                  <span>ZONA</span>
+                  <strong>11</strong>
+                </div>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Leonardo Pacheco Amaral </strong>
+                  <strong>Leonardo Pacheco Amaral</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521967538871"
+                      >(21) 96753-8871</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:leonardo.amaral@tkelevator.com"
+                      >leonardo.amaral@tkelevator.com</a
+                    >
+                  </div>
                 </div>
-
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Renata Costa Hygino de Miranda </strong>
+                  <strong>Renata Costa Hygino de Miranda</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521996133919"
+                      >(21) 99613-3919</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:renata.miranda@tkelevator.com"
+                      >renata.miranda@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 18 -->
-
             <article class="zone-card dedicated">
               <header>
                 <div>
                   <span>ZONA</span>
                   <strong>18</strong>
                 </div>
-
-                <span class="badge"> Galeão </span>
+                <span class="badge">Galeão</span>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong> Arão Garcia da Silva </strong>
+                  <strong class="pending">A definir</strong>
                 </div>
 
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Renata Martins Martellote de Castilho </strong>
+                  <strong>Renata Martins Martellote de Castilho</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521997983380"
+                      >(21) 99798-3380</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:renata.castilho@tkelevator.com"
+                      >renata.castilho@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
-
-            <!-- ZONA 19 -->
-
             <article class="zone-card dedicated">
               <header>
                 <div>
                   <span>ZONA</span>
                   <strong>19</strong>
                 </div>
-
-                <span class="badge"> Globo </span>
+                <span class="badge">Globo</span>
               </header>
 
               <div class="zone-body">
-                <div>
+                <div class="zone-person">
                   <span>Supervisor</span>
-                  <strong class="pending"> A definir </strong>
+                  <strong class="pending">A definir</strong>
                 </div>
 
-                <div>
+                <div class="zone-person">
                   <span>Consultor</span>
-                  <strong> Renata Martins Martellote de Castilho </strong>
+                  <strong>Renata Martins Martellote de Castilho</strong>
+                  <div class="person-contact">
+                    <a class="person-phone" href="tel:+5521997983380"
+                      >(21) 99798-3380</a
+                    >
+                    <a
+                      class="person-email"
+                      href="mailto:renata.castilho@tkelevator.com"
+                      >renata.castilho@tkelevator.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
           </div>
+
+          <section class="rescue-section">
+            <div class="rescue-heading">
+              <span>VENDEDORES</span>
+              <h3>Resgate / Captação</h3>
+            </div>
+
+            <div class="rescue-grid">
+              <article class="rescue-card">
+                <div class="rescue-card-header">
+                  <div>
+                    <span>RESGATE / CAPTAÇÃO</span>
+                    <strong>Pedro Pereira Filho</strong>
+                  </div>
+                </div>
+
+                <div class="rescue-card-body">
+                  <div class="rescue-contact">
+                    <a href="tel:+5521999158322">(21) 99915-8322</a>
+                    <a href="mailto:pedro.filho@tkelevator.com"
+                      >pedro.filho@tkelevator.com</a
+                    >
+                  </div>
+
+                  <div
+                    class="rescue-zones"
+                    aria-label="Zonas de resgate e captação de Pedro"
+                  >
+                    <span>Zona 05</span>
+                    <span>Zona 06</span>
+                    <span>Zona 11</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="rescue-card">
+                <div class="rescue-card-header">
+                  <div>
+                    <span>RESGATE / CAPTAÇÃO</span>
+                    <strong>Reinaldo Silva Soares Dias</strong>
+                  </div>
+                </div>
+
+                <div class="rescue-card-body">
+                  <div class="rescue-contact">
+                    <a href="tel:+5521999945603">(21) 99994-5603</a>
+                    <a href="mailto:reinaldo.soares@tkelevator.com"
+                      >reinaldo.soares@tkelevator.com</a
+                    >
+                  </div>
+
+                  <div
+                    class="rescue-zones"
+                    aria-label="Zonas confirmadas de resgate e captação de Reinaldo"
+                  >
+                    <span>Zona 01</span>
+                    <span>Zona 03</span>
+                    <span>Zona 04</span>
+                    <span>Zona 05</span>
+                    <span>Zona 07</span>
+                    <span>Zona 10</span>
+                  </div>
+
+                  <!-- Adicione aqui as demais zonas do Reinaldo quando forem confirmadas. -->
+                </div>
+              </article>
+            </div>
+          </section>
         </section>
       </main>
 
