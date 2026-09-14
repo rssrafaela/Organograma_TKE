@@ -3,7 +3,6 @@
 ========================================= */
 
 :root {
-
     --tke-purple: #6200c9;
     --tke-orange: #f36c21;
 
@@ -19,7 +18,6 @@
     --gray-50: #f8f8f9;
 
     --white: #ffffff;
-
 }
 
 
@@ -30,31 +28,23 @@
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 }
-
 
 html,
 body {
     width: 100%;
     height: 100%;
-
-    overflow: hidden;
 }
 
-
 body {
-
     font-family:
         "Segoe UI",
         Arial,
         sans-serif;
 
     background: #e9e9ea;
-
     color: var(--text);
-
 }
 
 
@@ -63,7 +53,6 @@ body {
 ========================================= */
 
 .app {
-
     width: 100vw;
     height: 100vh;
 
@@ -72,6 +61,7 @@ body {
 
     background: var(--white);
 
+    overflow: hidden;
 }
 
 
@@ -80,7 +70,6 @@ body {
 ========================================= */
 
 .header {
-
     position: relative;
 
     height: 11vh;
@@ -97,50 +86,36 @@ body {
 
     padding: 0 3vw;
 
-    border-top:
-        5px solid var(--tke-orange);
+    border-top: 5px solid var(--tke-orange);
+    border-bottom: 1px solid var(--gray-200);
 
-    border-bottom:
-        1px solid var(--gray-200);
-
+    flex-shrink: 0;
 }
-
 
 .header-logo img {
-
     width: 105px;
+    height: auto;
 
     display: block;
-
 }
-
 
 .header-center {
-
     text-align: center;
-
 }
 
-
 .header-center h1 {
-
-    font-size: 1.65vw;
-
+    font-size: clamp(22px, 1.65vw, 32px);
     font-weight: 650;
 
     color: var(--dark);
-
 }
 
-
 .header-center p {
-
     margin-top: 5px;
 
-    font-size: .8vw;
+    font-size: clamp(11px, .8vw, 15px);
 
     color: var(--gray-500);
-
 }
 
 
@@ -149,24 +124,20 @@ body {
 ========================================= */
 
 .header-actions {
-
     display: flex;
 
     justify-content: flex-end;
+    align-items: center;
 
     gap: 8px;
-
 }
 
-
 .slide-btn {
-
     height: 34px;
 
     padding: 0 15px;
 
     border: 1px solid var(--gray-300);
-
     border-radius: 20px;
 
     background: white;
@@ -176,35 +147,25 @@ body {
     cursor: pointer;
 
     font-size: 11px;
-
     font-weight: 600;
 
-    transition: .2s;
-
+    transition:
+        background .2s,
+        color .2s,
+        border-color .2s;
 }
-
 
 .slide-btn:hover {
-
-    border-color:
-        var(--tke-purple);
-
-    color:
-        var(--tke-purple);
-
+    border-color: var(--tke-purple);
+    color: var(--tke-purple);
 }
 
-
 .slide-btn.active {
-
-    background:
-        var(--tke-purple);
+    background: var(--tke-purple);
 
     color: white;
 
-    border-color:
-        var(--tke-purple);
-
+    border-color: var(--tke-purple);
 }
 
 
@@ -213,9 +174,7 @@ body {
 ========================================= */
 
 .main {
-
     flex: 1;
-
     min-height: 0;
 
     padding:
@@ -223,22 +182,16 @@ body {
         3vw
         1vh;
 
+    overflow: hidden;
 }
-
 
 .page {
-
     display: none;
-
     height: 100%;
-
 }
 
-
 .page.active {
-
     display: block;
-
 }
 
 
@@ -247,70 +200,52 @@ body {
 ========================================= */
 
 .section-heading {
-
-    height: 8vh;
-
     min-height: 60px;
 
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 
     margin-bottom: 1vh;
-
 }
-
 
 .section-heading.compact {
-
-    height: 6vh;
-
+    min-height: 50px;
 }
 
-
 .eyebrow {
-
     display: block;
 
     margin-bottom: 4px;
 
-    color:
-        var(--tke-orange);
+    color: var(--tke-orange);
 
-    font-size: .65vw;
+    font-size: clamp(8px, .65vw, 12px);
 
     font-weight: 800;
 
     letter-spacing: 1.2px;
-
 }
 
-
 .section-heading h2 {
-
-    font-size: 1.55vw;
+    font-size: clamp(22px, 1.55vw, 30px);
 
     font-weight: 650;
 
     color: var(--dark);
-
 }
 
-
 .section-heading p {
-
     width: 380px;
 
     text-align: right;
 
-    font-size: .78vw;
+    font-size: clamp(11px, .78vw, 14px);
 
     line-height: 1.5;
 
     color: var(--gray-500);
-
 }
 
 
@@ -319,20 +254,15 @@ body {
 ========================================= */
 
 .management {
-
     display: flex;
 
     flex-direction: column;
 
     align-items: center;
-
 }
 
-
 .person-card {
-
     width: 220px;
-
     min-height: 52px;
 
     display: flex;
@@ -340,24 +270,19 @@ body {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     background: white;
 
-    border:
-        1px solid var(--gray-200);
+    border: 1px solid var(--gray-200);
 
     border-radius: 9px;
 
     box-shadow:
         0 4px 12px rgba(0,0,0,.04);
-
 }
 
-
 .person-card span {
-
     margin-bottom: 3px;
 
     font-size: 8px;
@@ -369,51 +294,31 @@ body {
     letter-spacing: .7px;
 
     color: var(--gray-500);
-
 }
 
-
 .person-card strong {
-
     font-size: 14px;
 
     color: var(--dark);
-
 }
-
 
 .gerente {
-
-    border-top:
-        3px solid #666;
-
+    border-top: 3px solid #666;
 }
-
 
 .coordenador {
-
-    border-top:
-        3px solid var(--tke-purple);
-
+    border-top: 3px solid var(--tke-purple);
 }
-
 
 .management-line {
-
     width: 1px;
-
     height: 15px;
 
-    background:
-        var(--gray-300);
-
+    background: var(--gray-300);
 }
 
-
 .management-line.final {
-
     height: 20px;
-
 }
 
 
@@ -422,21 +327,17 @@ body {
 ========================================= */
 
 .departments {
-
     position: relative;
 
     display: grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(4, minmax(0, 1fr));
 
     gap: 1.2vw;
-
 }
 
-
 .departments::before {
-
     content: "";
 
     position: absolute;
@@ -448,30 +349,22 @@ body {
 
     height: 1px;
 
-    background:
-        var(--gray-300);
-
+    background: var(--gray-300);
 }
 
-
 .department {
+    min-width: 0;
 
     overflow: hidden;
 
-    min-width: 0;
-
-    border:
-        1px solid var(--gray-200);
+    border: 1px solid var(--gray-200);
 
     border-radius: 9px;
 
     background: white;
-
 }
 
-
 .department-header {
-
     min-height: 54px;
 
     display: flex;
@@ -480,17 +373,12 @@ body {
 
     padding: 0 14px;
 
-    background:
-        var(--gray-50);
+    background: var(--gray-50);
 
-    border-bottom:
-        1px solid var(--gray-200);
-
+    border-bottom: 1px solid var(--gray-200);
 }
 
-
 .department-header span {
-
     display: block;
 
     margin-bottom: 3px;
@@ -503,34 +391,23 @@ body {
 
     letter-spacing: .5px;
 
-    color:
-        var(--gray-500);
-
+    color: var(--gray-500);
 }
 
-
 .department-header h3 {
-
     font-size: 13px;
 
     color: var(--dark);
-
 }
-
 
 .department-content {
-
     padding: 12px;
-
 }
 
-
 .block-title {
-
     margin-bottom: 8px;
 
-    color:
-        var(--gray-500);
+    color: var(--gray-500);
 
     font-size: 8px;
 
@@ -539,7 +416,6 @@ body {
     text-transform: uppercase;
 
     letter-spacing: .6px;
-
 }
 
 
@@ -548,18 +424,14 @@ body {
 ========================================= */
 
 .zone-tags {
-
     display: flex;
 
     flex-wrap: wrap;
 
     gap: 5px;
-
 }
 
-
 .zone-tags span {
-
     min-height: 24px;
 
     display: inline-flex;
@@ -570,28 +442,21 @@ body {
 
     border-radius: 4px;
 
-    background:
-        var(--gray-100);
+    background: var(--gray-100);
 
-    color:
-        var(--gray-700);
+    color: var(--gray-700);
 
     font-size: 9px;
 
     font-weight: 600;
-
 }
 
-
 .divider {
-
     height: 1px;
 
     margin: 12px 0;
 
-    background:
-        var(--gray-200);
-
+    background: var(--gray-200);
 }
 
 
@@ -600,26 +465,19 @@ body {
 ========================================= */
 
 .staff-grid {
-
     display: grid;
 
     grid-template-columns:
         1fr 1fr;
 
     gap: 6px;
-
 }
-
 
 .staff-grid.single {
-
     grid-template-columns: 1fr;
-
 }
 
-
 .staff-card {
-
     min-height: 40px;
 
     display: flex;
@@ -639,21 +497,15 @@ body {
     border-radius: 5px;
 
     background: white;
-
 }
 
-
 .staff-card strong {
-
     font-size: 10px;
 
     color: var(--dark);
-
 }
 
-
 .staff-card span {
-
     margin-top: 2px;
 
     font-size: 7px;
@@ -661,7 +513,6 @@ body {
     color: var(--gray-500);
 
     text-transform: uppercase;
-
 }
 
 
@@ -670,33 +521,27 @@ body {
 ========================================= */
 
 .zones-grid {
-
     display: grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(4, minmax(0, 1fr));
 
     gap: 1vw;
-
 }
 
-
 .zone-card {
+    min-width: 0;
 
     overflow: hidden;
 
-    border:
-        1px solid var(--gray-200);
+    border: 1px solid var(--gray-200);
 
     border-radius: 8px;
 
     background: white;
-
 }
 
-
 .zone-card header {
-
     min-height: 46px;
 
     display: flex;
@@ -707,27 +552,20 @@ body {
 
     padding: 0 12px;
 
-    background:
-        var(--dark);
+    background: var(--dark);
 
     color: white;
-
 }
 
-
 .zone-card header > div {
-
     display: flex;
 
     align-items: baseline;
 
     gap: 6px;
-
 }
 
-
 .zone-card header span {
-
     font-size: 8px;
 
     letter-spacing: .9px;
@@ -735,19 +573,13 @@ body {
     text-transform: uppercase;
 
     color: #d7d7d7;
-
 }
-
 
 .zone-card header strong {
-
     font-size: 16px;
-
 }
 
-
 .badge {
-
     padding: 5px 8px;
 
     border-radius: 12px;
@@ -760,38 +592,27 @@ body {
 
     color: white !important;
 
+    white-space: nowrap;
 }
 
-
 .zone-body {
-
     display: grid;
 
     grid-template-columns:
         1fr 1fr;
-
 }
 
-
 .zone-body > div {
-
     min-height: 64px;
 
     padding: 10px 11px;
-
 }
-
 
 .zone-body > div + div {
-
-    border-left:
-        1px solid var(--gray-200);
-
+    border-left: 1px solid var(--gray-200);
 }
 
-
 .zone-body span {
-
     display: block;
 
     margin-bottom: 5px;
@@ -802,49 +623,33 @@ body {
 
     text-transform: uppercase;
 
-    color:
-        var(--gray-500);
-
+    color: var(--gray-500);
 }
 
-
 .zone-body strong {
-
     display: block;
 
     font-size: 10px;
 
     line-height: 1.25;
 
-    color:
-        var(--dark);
+    color: var(--dark);
 
+    overflow-wrap: anywhere;
 }
-
 
 .zone-body > div:first-child {
-
-    border-bottom:
-        3px solid var(--tke-purple);
-
+    border-bottom: 3px solid var(--tke-purple);
 }
-
 
 .zone-body > div:last-child {
-
-    border-bottom:
-        3px solid var(--tke-orange);
-
+    border-bottom: 3px solid var(--tke-orange);
 }
 
-
 .pending {
-
-    color:
-        var(--gray-500) !important;
+    color: var(--gray-500) !important;
 
     font-style: italic;
-
 }
 
 
@@ -853,26 +658,19 @@ body {
 ========================================= */
 
 .technical-team {
-
     padding: 8px 10px 9px;
 
-    background:
-        var(--gray-50);
+    background: var(--gray-50);
 
-    border-top:
-        1px solid var(--gray-200);
-
+    border-top: 1px solid var(--gray-200);
 }
 
-
 .technical-title {
-
     display: block;
 
     margin-bottom: 6px;
 
-    color:
-        var(--gray-500);
+    color: var(--gray-500);
 
     font-size: 7px;
 
@@ -881,63 +679,51 @@ body {
     text-transform: uppercase;
 
     letter-spacing: .6px;
-
 }
 
-
 .technical-list {
-
     display: grid;
 
     grid-template-columns:
         1fr 1fr;
 
     gap: 5px;
-
 }
 
-
 .technical-list > div {
+    min-width: 0;
 
     padding: 6px 7px;
 
-    border:
-        1px solid var(--gray-200);
+    border: 1px solid var(--gray-200);
 
     border-radius: 4px;
 
     background: white;
-
 }
 
-
 .technical-list strong {
-
     display: block;
 
     font-size: 8px;
 
     line-height: 1.2;
 
-    color:
-        var(--dark);
+    color: var(--dark);
 
+    overflow-wrap: anywhere;
 }
 
-
 .technical-list span {
-
     display: block;
 
     margin-top: 2px;
 
-    color:
-        var(--gray-500);
+    color: var(--gray-500);
 
     font-size: 6px;
 
     text-transform: uppercase;
-
 }
 
 
@@ -946,7 +732,6 @@ body {
 ========================================= */
 
 .footer {
-
     height: 4vh;
     min-height: 28px;
 
@@ -961,29 +746,31 @@ body {
     border-top:
         1px solid var(--gray-200);
 
-    background:
-        var(--gray-50);
+    background: var(--gray-50);
 
-    color:
-        var(--gray-500);
+    color: var(--gray-500);
 
     font-size: 8px;
 
+    flex-shrink: 0;
 }
 
 
 /* =========================================
-   TELAS MENORES
+   TABLETS / NOTEBOOKS MENORES
 ========================================= */
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
 
-    .header-center h1 {
-        font-size: 22px;
+    .header {
+        grid-template-columns:
+            140px
+            1fr
+            240px;
     }
 
-    .section-heading h2 {
-        font-size: 20px;
+    .header-logo img {
+        width: 90px;
     }
 
     .departments {
@@ -992,6 +779,422 @@ body {
 
     .zones-grid {
         gap: 8px;
+    }
+
+    .zone-body strong {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        width: 100%;
+        height: auto;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+
+    /* APP */
+
+    .app {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        display: block;
+
+        overflow: visible;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        position: relative;
+
+        height: auto;
+        min-height: 0;
+
+        display: grid;
+
+        grid-template-columns:
+            92px
+            minmax(0, 1fr);
+
+        gap: 10px;
+
+        align-items: center;
+
+        padding:
+            14px
+            14px
+            12px;
+
+        border-top-width: 4px;
+    }
+
+    .header-logo img {
+        width: 84px;
+    }
+
+    .header-center {
+        text-align: right;
+    }
+
+    .header-center h1 {
+        font-size: 20px;
+        line-height: 1.05;
+    }
+
+    .header-center p {
+        display: none;
+    }
+
+
+    /* BOTÕES */
+
+    .header-actions {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 8px;
+
+        margin-top: 8px;
+    }
+
+    .slide-btn {
+        width: 100%;
+        height: 40px;
+
+        padding: 0 10px;
+
+        border-radius: 7px;
+
+        font-size: 12px;
+    }
+
+
+    /* MAIN */
+
+    .main {
+        padding:
+            18px
+            14px
+            28px;
+
+        overflow: visible;
+    }
+
+    .page {
+        height: auto;
+    }
+
+
+    /* TÍTULOS */
+
+    .section-heading,
+    .section-heading.compact {
+        min-height: 0;
+
+        display: block;
+
+        margin-bottom: 22px;
+    }
+
+    .section-heading p {
+        display: none;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+
+        margin-bottom: 5px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+
+        line-height: 1.08;
+    }
+
+
+    /* GERENTE / COORDENADOR */
+
+    .management {
+        margin-bottom: 20px;
+    }
+
+    .person-card {
+        width: min(220px, 78vw);
+
+        min-height: 50px;
+    }
+
+    .person-card span {
+        font-size: 8px;
+    }
+
+    .person-card strong {
+        font-size: 13px;
+    }
+
+    .management-line {
+        height: 14px;
+    }
+
+    .management-line.final {
+        height: 12px;
+    }
+
+
+    /* REMOVE LINHA DO DESKTOP */
+
+    .departments::before {
+        display: none;
+    }
+
+
+    /* DEPARTAMENTOS */
+
+    .departments {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .department {
+        width: 100%;
+    }
+
+    .department-header {
+        min-height: 58px;
+    }
+
+    .department-header span {
+        font-size: 9px;
+    }
+
+    .department-header h3 {
+        font-size: 15px;
+    }
+
+    .department-content {
+        padding: 14px;
+    }
+
+    .block-title {
+        font-size: 9px;
+    }
+
+
+    /* TAGS */
+
+    .zone-tags span {
+        min-height: 28px;
+
+        padding: 0 9px;
+
+        font-size: 10px;
+    }
+
+
+    /* EQUIPE */
+
+    .staff-grid,
+    .staff-grid.single {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .staff-card {
+        min-height: 50px;
+    }
+
+    .staff-card strong {
+        font-size: 11px;
+    }
+
+    .staff-card span {
+        font-size: 8px;
+    }
+
+
+    /* ZONAS */
+
+    .zones-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .zone-card {
+        width: 100%;
+    }
+
+    .zone-card header {
+        min-height: 52px;
+
+        padding: 0 14px;
+    }
+
+    .zone-card header strong {
+        font-size: 18px;
+    }
+
+    .zone-card header span {
+        font-size: 8px;
+    }
+
+    .badge {
+        font-size: 8px !important;
+
+        padding: 5px 9px;
+    }
+
+
+    /* RESPONSÁVEIS */
+
+    .zone-body {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .zone-body > div {
+        min-height: 76px;
+
+        padding: 11px 12px;
+    }
+
+    .zone-body span {
+        font-size: 8px;
+    }
+
+    .zone-body strong {
+        font-size: 12px;
+
+        line-height: 1.25;
+    }
+
+
+    /* ZONA 09 - CONSULTORES TÉCNICOS */
+
+    .technical-team {
+        padding: 10px 12px 12px;
+    }
+
+    .technical-title {
+        font-size: 8px;
+
+        margin-bottom: 8px;
+    }
+
+    .technical-list {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+    }
+
+    .technical-list > div {
+        padding: 9px 10px;
+    }
+
+    .technical-list strong {
+        font-size: 10px;
+
+        line-height: 1.25;
+    }
+
+    .technical-list span {
+        font-size: 7px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        height: auto;
+        min-height: 42px;
+
+        padding: 10px 14px;
+
+        gap: 10px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE PEQUENO
+========================================= */
+
+@media (max-width: 430px) {
+
+    .header {
+        grid-template-columns:
+            82px
+            minmax(0, 1fr);
+    }
+
+    .header-logo img {
+        width: 76px;
+    }
+
+    .header-center h1 {
+        font-size: 18px;
+    }
+
+    .main {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .staff-grid,
+    .staff-grid.single {
+        grid-template-columns: 1fr;
+    }
+
+    .zone-body {
+        grid-template-columns: 1fr;
+    }
+
+    .zone-body > div + div {
+        border-left: none;
+        border-top: 1px solid var(--gray-200);
+    }
+
+    .zone-body > div:first-child {
+        border-bottom: none;
+        border-left: 3px solid var(--tke-purple);
+    }
+
+    .zone-body > div:last-child {
+        border-bottom: none;
+        border-left: 3px solid var(--tke-orange);
     }
 
 }
