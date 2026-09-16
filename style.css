@@ -4179,3 +4179,72 @@ span.found-neighborhood {
     #zonas .manager-zones { padding: 13px 15px 15px; }
     #zonas .manager-zone-tags span { min-height: 28px; padding: 0 9px; }
 }
+
+
+/* ==========================================================
+   PADRÃO ÚNICO DE CONTATOS
+   Igual ao card Resgate / Captação (Pedro / Reinaldo)
+   Aplica a gestores, supervisores, consultores e técnicos
+========================================================== */
+
+#zonas .whatsapp-link,
+#zonas .whatsapp-link span,
+#zonas .manager-contact .whatsapp-link,
+#zonas .manager-contact .whatsapp-link span,
+#zonas .zone-card .zone-person .person-contact .whatsapp-link,
+#zonas .zone-card .zone-person .person-contact .whatsapp-link span,
+#zonas .technical-team .whatsapp-link,
+#zonas .technical-team .whatsapp-link span,
+#zonas .rescue-contact .whatsapp-link,
+#zonas .rescue-contact .whatsapp-link span {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+    color: #159447 !important;
+    text-transform: none !important;
+}
+
+#zonas .email-link,
+#zonas .email-link span,
+#zonas .manager-contact .email-link,
+#zonas .manager-contact .email-link span,
+#zonas .zone-card .zone-person .person-contact .email-link,
+#zonas .zone-card .zone-person .person-contact .email-link span,
+#zonas .technical-team .email-link,
+#zonas .technical-team .email-link span,
+#zonas .rescue-contact .email-link,
+#zonas .rescue-contact .email-link span {
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 1.3 !important;
+    color: #777 !important;
+    text-transform: none !important;
+}
+
+#zonas .whatsapp-link,
+#zonas .email-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: fit-content !important;
+    text-decoration: none;
+}
+
+#zonas .contact-icon,
+#zonas .manager-contact .contact-icon,
+#zonas .zone-card .zone-person .person-contact .contact-icon,
+#zonas .technical-team .contact-icon,
+#zonas .rescue-contact .contact-icon {
+    width: 18px !important;
+    height: 18px !important;
+    flex: 0 0 18px !important;
+    display: block !important;
+}
+
+#zonas .whatsapp-icon {
+    fill: #20b358 !important;
+}
+
+#zonas .email-icon {
+    fill: #777 !important;
+}
