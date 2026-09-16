@@ -1,49 +1,23 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Estrutura Organizacional | TKE</title>
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="app">
-      <!-- =====================================
-         CABEÇALHO
-    ====================================== -->
-
-      <header class="header">
-        <div class="header-logo">
-          <img src="logo-tke.png" alt="TKE" />
-        </div>
-
-        <div class="header-center">
-          <h1>Estrutura Organizacional</h1>
-          <p>Filial Rio de Janeiro</p>
-        </div>
-
-        <div class="header-actions">
-          <button class="slide-btn active" data-page="estrutura">
-            Estrutura
-          </button>
-
-          <button class="slide-btn" data-page="zonas">Zonas</button>
-        </div>
-      </header>
-
-      <!-- =====================================
-         CONTEÚDO
-    ====================================== -->
-
-      <main class="main">
-        <!-- =====================================
-             TELA 1 - ESTRUTURA ORGANIZACIONAL
-        ====================================== -->
-
-        <section id="estrutura" class="page active">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estrutura Organizacional | TKE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-logo"><img src="logo-tke.png" alt="TKE" /></div>
+      <div class="header-center"><h1>Estrutura Organizacional</h1><p>Filial Rio de Janeiro</p></div>
+      <div class="header-actions">
+        <button class="slide-btn active" data-page="estrutura">Estrutura</button>
+        <button class="slide-btn" data-page="zonas">Zonas</button>
+      </div>
+    </header>
+    <main class="main">
+<section id="estrutura" class="page active">
           <div class="section-heading">
             <div>
               <span class="eyebrow"> ORGANOGRAMA </span>
@@ -297,515 +271,435 @@
             </article>
           </div>
         </section>
+      <section id="zonas" class="page">
+<!-- =====================================
+           TÍTULO
+      ====================================== -->
 
-        <!-- =====================================
-             TELA 2 - GESTÃO POR ZONAS
-        ====================================== -->
+      <section class="section-heading">
 
-        <section id="zonas" class="page">
-          <div class="section-heading compact">
-            <div>
-              <span class="eyebrow">GESTÃO TERRITORIAL</span>
-              <h2>Responsáveis por Zona</h2>
+        <div>
+          <span class="eyebrow">
+            ATENDIMENTO AO CLIENTE
+          </span>
+
+          <h2>
+            Responsáveis por Zona
+          </h2>
+        </div>
+
+        <p>
+          Consulte os responsáveis e os bairros
+          atendidos pela sua região.
+        </p>
+
+      </section>
+
+
+      <!-- =====================================
+           PESQUISA DE BAIRRO
+      ====================================== -->
+
+      <section class="search-area">
+
+        <div class="search-content">
+
+          <div class="search-heading">
+
+            <div class="search-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"
+                />
+              </svg>
+
             </div>
 
-            <p>Supervisão, consultoria e atendimentos dedicados</p>
+            <div>
+
+              <span>
+                NÃO SABE QUAL É A SUA ZONA?
+              </span>
+
+              <h3>
+                Pesquise pelo seu bairro
+              </h3>
+
+              <p>
+                Digite o bairro para localizar
+                a zona e os responsáveis pelo atendimento.
+              </p>
+
+            </div>
+
           </div>
 
-          <div class="zones-grid">
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>01</strong>
-                </div>
-              </header>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Jonatas dos Santos Oliveira</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995324482"
-                      >(21) 99532-4482</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:jonatas.oliveira@tkelevator.com"
-                      >jonatas.oliveira@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Thiago Ribeiro Fernandes</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521996186138"
-                      >(21) 99618-6138</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:thiago.fernandes2@tkelevator.com"
-                      >thiago.fernandes2@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>03</strong>
-                </div>
-              </header>
+          <div class="search-box">
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Paulo Cesar Pastor dos Santos</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995019222"
-                      >(21) 99501-9222</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:paulo.pastor@tkelevator.com"
-                      >paulo.pastor@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Erickson de Carvalho Souto Maior</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521997976596"
-                      >(21) 99797-6596</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:erickson.maior@tkelevator.com"
-                      >erickson.maior@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card dedicated">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>04</strong>
-                </div>
-                <span class="badge">Cliente Especial</span>
-              </header>
+            <div class="input-wrapper">
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong> Yago Gomes da Rocha </strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521999437739"
-                      >(21) 99943-7739</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:yago.rocha@tkelevator.com"
-                      >yago.rocha@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong> Yago Gomes da Rocha </strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521999437739"
-                      >(21) 99943-7739</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:yago.rocha@tkelevator.com"
-                      >yago.rocha@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>05</strong>
-                </div>
-              </header>
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"
+                />
+              </svg>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Leandro Rodrigues Ribeiro</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521996838713"
-                      >(21) 99683-8713</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:leandro.ribeiro@tkelevator.com"
-                      >leandro.ribeiro@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Pedro Ivo Valente do Carmo Gomes</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521971240507"
-                      >(21) 97124-0507</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:pedro.gomes2@tkelevator.com"
-                      >pedro.gomes2@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>06</strong>
-                </div>
-              </header>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Willian Portela Vieira</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521972299548"
-                      >(21) 97229-9548</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:william.vieira@tkelevator.com"
-                      >william.vieira@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Renata Alves Narciso da Silva</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521998848459"
-                      >(21) 99884-8459</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:renata.silva@tkelevator.com"
-                      >renata.silva@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>07</strong>
-                </div>
-              </header>
+              <input
+                type="text"
+                id="bairroSearch"
+                placeholder="Ex.: Copacabana, Tijuca, Méier..."
+                autocomplete="off"
+                list="bairrosList"
+              />
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Wagner Soares Moreira</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995066079"
-                      >(21) 99506-6079</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:wagner.moreira@tkelevator.com"
-                      >wagner.moreira@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Dayanna da Silva Pinto</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521996012774"
-                      >(21) 99601-2774</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:dayanna.pinto@tkelevator.com"
-                      >dayanna.pinto@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card dedicated zone-9">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>09</strong>
-                </div>
-                <span class="badge">MetrôRio</span>
-              </header>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Douglas da Costa Oliveira</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995721332"
-                      >(21) 99572-1332</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:douglas.oliveira@tkelevator.com"
-                      >douglas.oliveira@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Luanda de Souza Santos</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521999221285"
-                      >(21) 99922-1285</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:luanda.souza@tkelevator.com"
-                      >luanda.souza@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
+              <datalist id="bairrosList"></datalist>
 
-              <div class="technical-team">
-                <span class="technical-title">Consultores Técnicos</span>
 
-                <div class="technical-list">
-                  <div>
-                    <strong>Andre Luis de Souza Vieira</strong>
-                    <span>Consultor Técnico</span>
-                    <div class="person-contact">
-                      <a class="person-phone" href="tel:+5521967035898"
-                        >(21) 96703-5898</a
-                      >
-                      <a
-                        class="person-email"
-                        href="mailto:andre-luis.vieira@tkelevator.com"
-                        >andre-luis.vieira@tkelevator.com</a
-                      >
-                    </div>
-                  </div>
+              <button
+                id="clearSearch"
+                class="clear-search"
+                type="button"
+                aria-label="Limpar pesquisa"
+              >
+                ×
+              </button>
 
-                  <div>
-                    <strong>Rodrigo de Carvalho Ojeda</strong>
-                    <span>Consultor Técnico</span>
-                    <div class="person-contact">
-                      <a class="person-phone" href="tel:+5521998486396"
-                        >(21) 99848-6396</a
-                      >
-                      <a
-                        class="person-email"
-                        href="mailto:rodrigo.ojeda@tkelevator.com"
-                        >rodrigo.ojeda@tkelevator.com</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>13</strong>
-                </div>
-              </header>
+            </div>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Douglas da Costa Oliveira</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995721332"
-                      >(21) 99572-1332</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:douglas.oliveira@tkelevator.com"
-                      >douglas.oliveira@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Luanda de Souza Santos</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521999221285"
-                      >(21) 99922-1285</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:luanda.souza@tkelevator.com"
-                      >luanda.souza@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>10</strong>
-                </div>
-              </header>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Rodrigo Odilon dos Ramos</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521995047668"
-                      >(21) 99504-7668</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:rodrigo.ramos@tkelevator.com"
-                      >rodrigo.ramos@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Mariana da Silva dos Santos</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521998669059"
-                      >(21) 99866-9059</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:mariana.santos@tkelevator.com"
-                      >mariana.santos@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>11</strong>
-                </div>
-              </header>
+            <button
+              id="searchButton"
+              class="search-button"
+              type="button"
+            >
+              Buscar zona
+            </button>
 
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong>Leonardo Pacheco Amaral</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521967538871"
-                      >(21) 96753-8871</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:leonardo.amaral@tkelevator.com"
-                      >leonardo.amaral@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Renata Costa Hygino de Miranda</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521996133919"
-                      >(21) 99613-3919</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:renata.miranda@tkelevator.com"
-                      >renata.miranda@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card dedicated">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>18</strong>
-                </div>
-                <span class="badge">Galeão</span>
-              </header>
-
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong class="pending">A definir</strong>
-                </div>
-
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Renata Martins Martellote de Castilho</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521997983380"
-                      >(21) 99798-3380</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:renata.castilho@tkelevator.com"
-                      >renata.castilho@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="zone-card dedicated">
-              <header>
-                <div>
-                  <span>ZONA</span>
-                  <strong>19</strong>
-                </div>
-                <span class="badge">Globo</span>
-              </header>
-
-              <div class="zone-body">
-                <div class="zone-person">
-                  <span>Supervisor</span>
-                  <strong class="pending">A definir</strong>
-                </div>
-
-                <div class="zone-person">
-                  <span>Consultor</span>
-                  <strong>Renata Martins Martellote de Castilho</strong>
-                  <div class="person-contact">
-                    <a class="person-phone" href="tel:+5521997983380"
-                      >(21) 99798-3380</a
-                    >
-                    <a
-                      class="person-email"
-                      href="mailto:renata.castilho@tkelevator.com"
-                      >renata.castilho@tkelevator.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
           </div>
 
-          <section class="rescue-section">
+
+          <!-- RESULTADO DA PESQUISA -->
+
+          <div
+            id="searchResult"
+            class="search-result"
+          ></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================
+           GESTORES
+      ====================================== -->
+
+      <section class="managers-section">
+
+        <div class="managers-heading">
+
+          <span>
+            GESTÃO DA FILIAL
+          </span>
+
+          <h3>
+            Gestores responsáveis
+          </h3>
+
+        </div>
+
+
+        <div class="managers-grid">
+
+
+          <!-- =================================
+               CARLA
+          ================================== -->
+
+          <article class="manager-card">
+
+            <div class="manager-header">
+
+              <span>
+                GESTOR COMERCIAL
+              </span>
+
+              <strong>
+                Carla Cristine Paiva Vieira
+              </strong>
+
+            </div>
+
+
+            <div class="manager-contact">
+
+
+              <!-- WHATSAPP -->
+
+              <a
+                class="whatsapp-link"
+                href="https://wa.me/5521999947339"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Conversar pelo WhatsApp"
+              >
+
+                <svg
+                  class="contact-icon whatsapp-icon"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+
+                  <path
+                    d="M16 3C8.82 3 3 8.67 3 15.67c0 2.46.72 4.75 1.97 6.69L3 29l6.87-1.8A13.2 13.2 0 0 0 16 28.67c7.18 0 13-5.67 13-12.67S23.18 3 16 3zm0 23.5c-2.05 0-4.04-.55-5.77-1.59l-.41-.25-4.08 1.07 1.09-3.97-.27-.41A10.37 10.37 0 0 1 4.9 15.67C4.9 9.83 9.88 5.08 16 5.08s11.1 4.75 11.1 10.59S22.12 26.5 16 26.5z"
+                  />
+
+                  <path
+                    d="M22.08 18.36c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.08-1.14 2.64 0 1.56 1.17 3.07 1.33 3.28.16.22 2.3 3.43 5.58 4.81.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.63-.09 1.95-.78 2.22-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37z"
+                  />
+
+                </svg>
+
+                <span>
+                  (21) 99994-7339
+                </span>
+
+              </a>
+
+
+              <!-- EMAIL -->
+
+              <a
+                class="email-link"
+                href="mailto:carla.paiva@tkelevator.com"
+                title="Enviar e-mail"
+              >
+
+                <svg
+                  class="contact-icon email-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+
+                <span>
+                  carla.paiva@tkelevator.com
+                </span>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               EDUARDO
+          ================================== -->
+
+          <article class="manager-card">
+
+            <div class="manager-header">
+
+              <span>
+                GESTOR OPERACIONAL
+              </span>
+
+              <strong>
+                Eduardo Afonso Gomes da Silva
+              </strong>
+
+            </div>
+
+
+            <div class="manager-contact">
+
+              <a
+                class="whatsapp-link"
+                href="https://wa.me/5521997982716"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Conversar pelo WhatsApp"
+              >
+
+                <svg
+                  class="contact-icon whatsapp-icon"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+
+                  <path
+                    d="M16 3C8.82 3 3 8.67 3 15.67c0 2.46.72 4.75 1.97 6.69L3 29l6.87-1.8A13.2 13.2 0 0 0 16 28.67c7.18 0 13-5.67 13-12.67S23.18 3 16 3zm0 23.5c-2.05 0-4.04-.55-5.77-1.59l-.41-.25-4.08 1.07 1.09-3.97-.27-.41A10.37 10.37 0 0 1 4.9 15.67C4.9 9.83 9.88 5.08 16 5.08s11.1 4.75 11.1 10.59S22.12 26.5 16 26.5z"
+                  />
+
+                  <path
+                    d="M22.08 18.36c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.08-1.14 2.64 0 1.56 1.17 3.07 1.33 3.28.16.22 2.3 3.43 5.58 4.81.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.63-.09 1.95-.78 2.22-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37z"
+                  />
+
+                </svg>
+
+                <span>
+                  (21) 99798-2716
+                </span>
+
+              </a>
+
+
+              <a
+                class="email-link"
+                href="mailto:eduardo.gomes@tkelevator.com"
+                title="Enviar e-mail"
+              >
+
+                <svg
+                  class="contact-icon email-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+
+                <span>
+                  eduardo.gomes@tkelevator.com
+                </span>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================
+               ADRIELLE
+          ================================== -->
+
+          <article class="manager-card">
+
+            <div class="manager-header">
+
+              <span>
+                GESTOR OPERACIONAL
+              </span>
+
+              <strong>
+                Adrielle de Araujo Afonso
+              </strong>
+
+            </div>
+
+
+            <div class="manager-contact">
+
+              <a
+                class="whatsapp-link"
+                href="https://wa.me/5521999945627"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Conversar pelo WhatsApp"
+              >
+
+                <svg
+                  class="contact-icon whatsapp-icon"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+
+                  <path
+                    d="M16 3C8.82 3 3 8.67 3 15.67c0 2.46.72 4.75 1.97 6.69L3 29l6.87-1.8A13.2 13.2 0 0 0 16 28.67c7.18 0 13-5.67 13-12.67S23.18 3 16 3zm0 23.5c-2.05 0-4.04-.55-5.77-1.59l-.41-.25-4.08 1.07 1.09-3.97-.27-.41A10.37 10.37 0 0 1 4.9 15.67C4.9 9.83 9.88 5.08 16 5.08s11.1 4.75 11.1 10.59S22.12 26.5 16 26.5z"
+                  />
+
+                  <path
+                    d="M22.08 18.36c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.08-1.14 2.64 0 1.56 1.17 3.07 1.33 3.28.16.22 2.3 3.43 5.58 4.81.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.63-.09 1.95-.78 2.22-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37z"
+                  />
+
+                </svg>
+
+                <span>
+                  (21) 99994-5627
+                </span>
+
+              </a>
+
+
+              <a
+                class="email-link"
+                href="mailto:adrielle.afonso@tkelevator.com"
+                title="Enviar e-mail"
+              >
+
+                <svg
+                  class="contact-icon email-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+
+                <span>
+                  adrielle.afonso@tkelevator.com
+                </span>
+
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================
+           TODAS AS ZONAS
+      ====================================== -->
+
+      <div class="zones-heading">
+
+        <div>
+
+          <span>
+            TODAS AS ZONAS
+          </span>
+
+          <h3>
+            Contatos e regiões atendidas
+          </h3>
+
+        </div>
+
+        <span id="zoneCounter"></span>
+
+      </div>
+
+
+      <!-- =====================================
+           ZONAS GERADAS PELO JAVASCRIPT
+      ====================================== -->
+
+      <section
+        id="zonesGrid"
+        class="zones-grid"
+      ></section>
+<section class="rescue-section">
             <div class="rescue-heading">
               <span>VENDEDORES</span>
               <h3>Resgate / Captação</h3>
@@ -822,10 +716,14 @@
 
                 <div class="rescue-card-body">
                   <div class="rescue-contact">
-                    <a href="tel:+5521999158322">(21) 99915-8322</a>
-                    <a href="mailto:pedro.filho@tkelevator.com"
-                      >pedro.filho@tkelevator.com</a
-                    >
+                    <a class="whatsapp-link" href="https://wa.me/5521999158322" target="_blank" rel="noopener noreferrer" title="Conversar pelo WhatsApp">
+                      <svg class="contact-icon whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.67 3 15.67c0 2.46.72 4.75 1.97 6.69L3 29l6.87-1.8A13.2 13.2 0 0 0 16 28.67c7.18 0 13-5.67 13-12.67S23.18 3 16 3zm0 23.5c-2.05 0-4.04-.55-5.77-1.59l-.41-.25-4.08 1.07 1.09-3.97-.27-.41A10.37 10.37 0 0 1 4.9 15.67C4.9 9.83 9.88 5.08 16 5.08s11.1 4.75 11.1 10.59S22.12 26.5 16 26.5z"/><path d="M22.08 18.36c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.08-1.14 2.64 0 1.56 1.17 3.07 1.33 3.28.16.22 2.3 3.43 5.58 4.81.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.63-.09 1.95-.78 2.22-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37z"/></svg>
+                      <span>(21) 99915-8322</span>
+                    </a>
+                    <a class="email-link" href="mailto:pedro.filho@tkelevator.com" title="Enviar e-mail">
+                      <svg class="contact-icon email-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                      <span>pedro.filho@tkelevator.com</span>
+                    </a>
                   </div>
 
                   <div
@@ -849,10 +747,14 @@
 
                 <div class="rescue-card-body">
                   <div class="rescue-contact">
-                    <a href="tel:+5521999945603">(21) 99994-5603</a>
-                    <a href="mailto:reinaldo.soares@tkelevator.com"
-                      >reinaldo.soares@tkelevator.com</a
-                    >
+                    <a class="whatsapp-link" href="https://wa.me/5521999945603" target="_blank" rel="noopener noreferrer" title="Conversar pelo WhatsApp">
+                      <svg class="contact-icon whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.67 3 15.67c0 2.46.72 4.75 1.97 6.69L3 29l6.87-1.8A13.2 13.2 0 0 0 16 28.67c7.18 0 13-5.67 13-12.67S23.18 3 16 3zm0 23.5c-2.05 0-4.04-.55-5.77-1.59l-.41-.25-4.08 1.07 1.09-3.97-.27-.41A10.37 10.37 0 0 1 4.9 15.67C4.9 9.83 9.88 5.08 16 5.08s11.1 4.75 11.1 10.59S22.12 26.5 16 26.5z"/><path d="M22.08 18.36c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.08-1.14 2.64 0 1.56 1.17 3.07 1.33 3.28.16.22 2.3 3.43 5.58 4.81.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.63-.09 1.95-.78 2.22-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37z"/></svg>
+                      <span>(21) 99994-5603</span>
+                    </a>
+                    <a class="email-link" href="mailto:reinaldo.soares@tkelevator.com" title="Enviar e-mail">
+                      <svg class="contact-icon email-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                      <span>reinaldo.soares@tkelevator.com</span>
+                    </a>
                   </div>
 
                   <div
@@ -872,20 +774,10 @@
               </article>
             </div>
           </section>
-        </section>
-      </main>
-
-      <!-- =====================================
-         RODAPÉ
-    ====================================== -->
-
-      <footer class="footer">
-        <div>TK Elevator</div>
-
-        <div>Estrutura Organizacional • Rio de Janeiro</div>
-      </footer>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+      </section>
+    </main>
+    <footer class="footer"><div>TK Elevator</div><div>Estrutura Organizacional • Rio de Janeiro</div></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
