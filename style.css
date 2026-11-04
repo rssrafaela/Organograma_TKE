@@ -4248,3 +4248,24 @@ span.found-neighborhood {
 #zonas .email-icon {
     fill: #777 !important;
 }
+
+/* AJUSTES DO ORGANOGRAMA - CINCO AREAS */
+@media (min-width: 1201px) {
+ #estrutura .departments {grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:stretch;}
+ #estrutura .departments::before {left:10%;right:10%;}
+ #estrutura .department-content {padding:11px;}
+ #estrutura .staff-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ #estrutura .staff-card strong {font-size:10px;overflow-wrap:anywhere;}
+ #estrutura .staff-card {min-width:0;}
+}
+@media (min-width:701px) and (max-width:1200px) {
+ #estrutura .departments {grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;}
+ #estrutura .departments::before {display:none;}
+ #estrutura.page.active {overflow-y:auto;}
+}
+@media (min-width:1201px) {
+ #estrutura.page.active {overflow-y:auto;}
+}
+#estrutura .department {height:fit-content;min-height:100%;}
+#estrutura .coordinator-row {justify-content:center;}
+#estrutura .gem-hierarchy .staff-card {min-width:0;}
