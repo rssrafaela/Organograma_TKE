@@ -638,13 +638,13 @@ const zones = [
 
     supervisor: {
 
-      name: "Rodrigo Odilon dos Ramos",
+      name: "Denis Conde Santos",
 
-      phone: "21995047668",
+      phone: "21971507638",
 
-      phoneFormatted: "(21) 99504-7668",
+      phoneFormatted: "(21) 97150-7638",
 
-      email: "rodrigo.ramos@tkelevator.com",
+      email: "denis.santos@tkelevator.com",
 
     },
 
